@@ -1,0 +1,110 @@
+[
+  {
+    "k": 25,
+    "rf_precision": 0.96,
+    "rf_recall": 0.1951,
+    "rf_frauds_caught": 24,
+    "lr_precision": 0.84,
+    "lr_recall": 0.1707,
+    "lr_frauds_caught": 21
+  },
+  {
+    "k": 50,
+    "rf_precision": 0.96,
+    "rf_recall": 0.3902,
+    "rf_frauds_caught": 48,
+    "lr_precision": 0.8,
+    "lr_recall": 0.3252,
+    "lr_frauds_caught": 40
+  },
+  {
+    "k": 75,
+    "rf_precision": 0.9733,
+    "rf_recall": 0.5935,
+    "rf_frauds_caught": 73,
+    "lr_precision": 0.84,
+    "lr_recall": 0.5122,
+    "lr_frauds_caught": 63
+  },
+  {
+    "k": 100,
+    "rf_precision": 0.91,
+    "rf_recall": 0.7398,
+    "rf_frauds_caught": 91,
+    "lr_precision": 0.86,
+    "lr_recall": 0.6992,
+    "lr_frauds_caught": 86
+  },
+  {
+    "k": 150,
+    "rf_precision": 0.7067,
+    "rf_recall": 0.8618,
+    "rf_frauds_caught": 106,
+    "lr_precision": 0.6733,
+    "lr_recall": 0.8211,
+    "lr_frauds_caught": 101
+  },
+  {
+    "k": 200,
+    "rf_precision": 0.535,
+    "rf_recall": 0.8699,
+    "rf_frauds_caught": 107,
+    "lr_precision": 0.52,
+    "lr_recall": 0.8455,
+    "lr_frauds_caught": 104
+  },
+  {
+    "k": 250,
+    "rf_precision": 0.428,
+    "rf_recall": 0.8699,
+    "rf_frauds_caught": 107,
+    "lr_precision": 0.42,
+    "lr_recall": 0.8537,
+    "lr_frauds_caught": 105
+  },
+  {
+    "k": 300,
+    "rf_precision": 0.3567,
+    "rf_recall": 0.8699,
+    "rf_frauds_caught": 107,
+    "lr_precision": 0.35,
+    "lr_recall": 0.8537,
+    "lr_frauds_caught": 105
+  },
+  {
+    "k": 400,
+    "rf_precision": 0.2675,
+    "rf_recall": 0.8699,
+    "rf_frauds_caught": 107,
+    "lr_precision": 0.265,
+    "lr_recall": 0.8618,
+    "lr_frauds_caught": 106
+  },
+  {
+    "k": 500,
+    "rf_precision": 0.214,
+    "rf_recall": 0.8699,
+    "rf_frauds_caught": 107,
+    "lr_precision": 0.212,
+    "lr_recall": 0.8618,
+    "lr_frauds_caught": 106
+  },
+  {
+    "k": 750,
+    "rf_precision": 0.144,
+    "rf_recall": 0.878,
+    "rf_frauds_caught": 108,
+    "lr_precision": 0.1427,
+    "lr_recall": 0.8699,
+    "lr_frauds_caught": 107
+  },
+  {
+    "k": 1000,
+    "rf_precision": 0.108,
+    "rf_recall": 0.878,
+    "rf_frauds_caught": 108,
+    "lr_precision": 0.107,
+    "lr_recall": 0.8699,
+    "lr_frauds_caught": 107
+  }
+]

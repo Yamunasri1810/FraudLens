@@ -1,0 +1,201 @@
+{
+  "evaluation_protocol": {
+    "dataset_rows": 284807,
+    "train_rows": 213605,
+    "test_rows": 71202,
+    "test_split_pct": 25.0,
+    "stratified": true,
+    "random_seed": 42,
+    "train_fraud_count": 369,
+    "test_fraud_count": 123,
+    "test_legit_count": 71079,
+    "total_fraud_count": 492,
+    "scaling_method": "RobustScaler (fitted on train Amount only)",
+    "leakage_prevention": "Strictly segregated train/test splits. Preprocessing learned exclusively on training folds. Class excluded from feature matrix."
+  },
+  "models": {
+    "all_negative": {
+      "name": "All-Negative Baseline",
+      "type": "Trivial Baseline",
+      "accuracy": 0.9983,
+      "average_precision": 0.001727,
+      "roc_auc": 0.5,
+      "precision_at_200": 0.0,
+      "recall_at_200": 0.0,
+      "fraud_in_top_200": 0,
+      "description": "Predicts all transactions are legitimate. Demonstrates that 99.83% accuracy catches 0 fraud cases."
+    },
+    "logistic_regression": {
+      "name": "Logistic Regression (Class-Weighted)",
+      "type": "Linear Classifier",
+      "average_precision": 0.705,
+      "roc_auc": 0.9705,
+      "precision_at_200": 0.52,
+      "recall_at_200": 0.8455,
+      "fraud_in_top_200": 104,
+      "confusion_matrix": [
+        [
+          69020,
+          2059
+        ],
+        [
+          13,
+          110
+        ]
+      ],
+      "hyperparameters": {
+        "class_weight": "balanced",
+        "max_iter": 1000,
+        "solver": "lbfgs"
+      },
+      "description": "Balanced class-weighted linear model prioritizing minority fraud class penalization."
+    },
+    "random_forest": {
+      "name": "Random Forest (Balanced Subsample)",
+      "type": "Ensemble Tree Classifier",
+      "average_precision": 0.8157,
+      "roc_auc": 0.9657,
+      "precision_at_200": 0.535,
+      "recall_at_200": 0.8699,
+      "fraud_in_top_200": 107,
+      "confusion_matrix": [
+        [
+          71068,
+          11
+        ],
+        [
+          30,
+          93
+        ]
+      ],
+      "hyperparameters": {
+        "n_estimators": 100,
+        "max_depth": 15,
+        "class_weight": "balanced_subsample"
+      },
+      "description": "Deep non-linear ensemble capturing complex interactions among latent PCA components."
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "V14",
+      "importance": 0.186
+    },
+    {
+      "feature": "V10",
+      "importance": 0.1139
+    },
+    {
+      "feature": "V12",
+      "importance": 0.1078
+    },
+    {
+      "feature": "V4",
+      "importance": 0.0991
+    },
+    {
+      "feature": "V17",
+      "importance": 0.0831
+    },
+    {
+      "feature": "V3",
+      "importance": 0.0611
+    },
+    {
+      "feature": "V11",
+      "importance": 0.0542
+    },
+    {
+      "feature": "V16",
+      "importance": 0.0504
+    },
+    {
+      "feature": "V2",
+      "importance": 0.038
+    },
+    {
+      "feature": "V9",
+      "importance": 0.0238
+    },
+    {
+      "feature": "V7",
+      "importance": 0.0221
+    },
+    {
+      "feature": "V21",
+      "importance": 0.0168
+    },
+    {
+      "feature": "V19",
+      "importance": 0.0129
+    },
+    {
+      "feature": "V18",
+      "importance": 0.0109
+    },
+    {
+      "feature": "Amount",
+      "importance": 0.0107
+    },
+    {
+      "feature": "V1",
+      "importance": 0.0091
+    },
+    {
+      "feature": "V13",
+      "importance": 0.009
+    },
+    {
+      "feature": "V20",
+      "importance": 0.0089
+    },
+    {
+      "feature": "V6",
+      "importance": 0.0088
+    },
+    {
+      "feature": "V8",
+      "importance": 0.0085
+    },
+    {
+      "feature": "V26",
+      "importance": 0.0085
+    },
+    {
+      "feature": "V15",
+      "importance": 0.008
+    },
+    {
+      "feature": "V5",
+      "importance": 0.0077
+    },
+    {
+      "feature": "V27",
+      "importance": 0.0076
+    },
+    {
+      "feature": "V25",
+      "importance": 0.0071
+    },
+    {
+      "feature": "V28",
+      "importance": 0.0066
+    },
+    {
+      "feature": "V22",
+      "importance": 0.006
+    },
+    {
+      "feature": "V23",
+      "importance": 0.0054
+    },
+    {
+      "feature": "Time",
+      "importance": 0.0042
+    },
+    {
+      "feature": "V24",
+      "importance": 0.004
+    }
+  ]
+}

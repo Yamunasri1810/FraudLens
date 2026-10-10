@@ -1,0 +1,260 @@
+{
+  "dataset_summary": {
+    "total_transactions": 284807,
+    "fraud_count": 492,
+    "legit_count": 284315,
+    "fraud_prevalence_pct": 0.1727,
+    "duplicate_count": 1081,
+    "missing_values": 0,
+    "total_features": 30
+  },
+  "amount_comparison": {
+    "fraud": {
+      "median": 9.25,
+      "mean": 122.21,
+      "max": 2125.87
+    },
+    "legitimate": {
+      "median": 22.0,
+      "mean": 88.29,
+      "max": 25691.16
+    }
+  },
+  "amount_distribution": [
+    {
+      "bucket": "0-10",
+      "legitimate": 97065,
+      "fraud": 249
+    },
+    {
+      "bucket": "10-50",
+      "legitimate": 92334,
+      "fraud": 56
+    },
+    {
+      "bucket": "50-100",
+      "legitimate": 37661,
+      "fraud": 57
+    },
+    {
+      "bucket": "100-200",
+      "legitimate": 28025,
+      "fraud": 45
+    },
+    {
+      "bucket": "200-500",
+      "legitimate": 19773,
+      "fraud": 50
+    },
+    {
+      "bucket": "500-1K",
+      "legitimate": 6397,
+      "fraud": 26
+    },
+    {
+      "bucket": "1K-5K",
+      "legitimate": 3005,
+      "fraud": 9
+    },
+    {
+      "bucket": ">5K",
+      "legitimate": 55,
+      "fraud": 0
+    }
+  ],
+  "pca_features": {
+    "V14": {
+      "fraud_mean": -6.972,
+      "legit_mean": 0.012,
+      "correlation": -0.3025,
+      "divergence": -6.984
+    },
+    "V17": {
+      "fraud_mean": -6.666,
+      "legit_mean": 0.012,
+      "correlation": -0.3265,
+      "divergence": -6.677
+    },
+    "V12": {
+      "fraud_mean": -6.259,
+      "legit_mean": 0.011,
+      "correlation": -0.2606,
+      "divergence": -6.27
+    },
+    "V10": {
+      "fraud_mean": -5.677,
+      "legit_mean": 0.01,
+      "correlation": -0.2169,
+      "divergence": -5.687
+    }
+  },
+  "hourly_data": [
+    {
+      "hour": 0,
+      "transactions": 7695,
+      "fraud_count": 6,
+      "fraud_rate_pct": 0.078
+    },
+    {
+      "hour": 1,
+      "transactions": 4220,
+      "fraud_count": 10,
+      "fraud_rate_pct": 0.237
+    },
+    {
+      "hour": 2,
+      "transactions": 3328,
+      "fraud_count": 57,
+      "fraud_rate_pct": 1.7127
+    },
+    {
+      "hour": 3,
+      "transactions": 3492,
+      "fraud_count": 17,
+      "fraud_rate_pct": 0.4868
+    },
+    {
+      "hour": 4,
+      "transactions": 2209,
+      "fraud_count": 23,
+      "fraud_rate_pct": 1.0412
+    },
+    {
+      "hour": 5,
+      "transactions": 2990,
+      "fraud_count": 11,
+      "fraud_rate_pct": 0.3679
+    },
+    {
+      "hour": 6,
+      "transactions": 4101,
+      "fraud_count": 9,
+      "fraud_rate_pct": 0.2195
+    },
+    {
+      "hour": 7,
+      "transactions": 7243,
+      "fraud_count": 23,
+      "fraud_rate_pct": 0.3175
+    },
+    {
+      "hour": 8,
+      "transactions": 10276,
+      "fraud_count": 9,
+      "fraud_rate_pct": 0.0876
+    },
+    {
+      "hour": 9,
+      "transactions": 15838,
+      "fraud_count": 16,
+      "fraud_rate_pct": 0.101
+    },
+    {
+      "hour": 10,
+      "transactions": 16598,
+      "fraud_count": 8,
+      "fraud_rate_pct": 0.0482
+    },
+    {
+      "hour": 11,
+      "transactions": 16856,
+      "fraud_count": 53,
+      "fraud_rate_pct": 0.3144
+    },
+    {
+      "hour": 12,
+      "transactions": 15420,
+      "fraud_count": 17,
+      "fraud_rate_pct": 0.1102
+    },
+    {
+      "hour": 13,
+      "transactions": 15365,
+      "fraud_count": 17,
+      "fraud_rate_pct": 0.1106
+    },
+    {
+      "hour": 14,
+      "transactions": 16570,
+      "fraud_count": 23,
+      "fraud_rate_pct": 0.1388
+    },
+    {
+      "hour": 15,
+      "transactions": 16461,
+      "fraud_count": 26,
+      "fraud_rate_pct": 0.1579
+    },
+    {
+      "hour": 16,
+      "transactions": 16453,
+      "fraud_count": 22,
+      "fraud_rate_pct": 0.1337
+    },
+    {
+      "hour": 17,
+      "transactions": 16166,
+      "fraud_count": 29,
+      "fraud_rate_pct": 0.1794
+    },
+    {
+      "hour": 18,
+      "transactions": 17039,
+      "fraud_count": 33,
+      "fraud_rate_pct": 0.1937
+    },
+    {
+      "hour": 19,
+      "transactions": 15649,
+      "fraud_count": 19,
+      "fraud_rate_pct": 0.1214
+    },
+    {
+      "hour": 20,
+      "transactions": 16756,
+      "fraud_count": 18,
+      "fraud_rate_pct": 0.1074
+    },
+    {
+      "hour": 21,
+      "transactions": 17703,
+      "fraud_count": 16,
+      "fraud_rate_pct": 0.0904
+    },
+    {
+      "hour": 22,
+      "transactions": 15441,
+      "fraud_count": 9,
+      "fraud_rate_pct": 0.0583
+    },
+    {
+      "hour": 23,
+      "transactions": 10938,
+      "fraud_count": 21,
+      "fraud_rate_pct": 0.192
+    }
+  ],
+  "key_insights": [
+    {
+      "id": "INSIGHT_TEMPORAL_SPIKE",
+      "title": "Severe Early Morning Temporal Clustering",
+      "description": "Fraud frequency spikes sharply between 02:00 and 05:00 UTC, peaking at Hour 2:00 with a fraud rate of 1.71% \u2014 approximately 10x higher than the dataset baseline (0.173%), despite legitimate transaction volumes dipping to daily lows.",
+      "type": "temporal",
+      "severity": "high"
+    },
+    {
+      "id": "INSIGHT_LATENT_PCA_SHIFT",
+      "title": "Extreme Divergence in Latent Components (V14, V17, V12, V10)",
+      "description": "Fraudulent transactions exhibit massive structural divergence in PCA dimensions V14 (mean -6.972 vs 0.012), V17 (mean -6.666 vs 0.012), V12 (mean -6.259), and V10 (mean -5.677). These provide clean linear and non-linear separation boundaries.",
+      "type": "feature_divergence",
+      "severity": "critical"
+    },
+    {
+      "id": "INSIGHT_MICRO_TRANSACTIONS",
+      "title": "Prevalence of Low-Value Card-Testing Fraud",
+      "description": "Contrary to the misconception that credit card fraud primarily targets massive amounts, fraudulent transactions exhibit a median of $9.25 (lower than legitimate transactions at $22.00). Fraudulent charges frequently test stolen credentials with low amounts to evade cardholder suspicion before scaling.",
+      "type": "amount_behavior",
+      "severity": "medium"
+    }
+  ]
+}
