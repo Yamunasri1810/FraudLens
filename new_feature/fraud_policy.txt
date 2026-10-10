@@ -1,0 +1,133 @@
+FRAUDLENS PAYMENT VERIFICATION AND FRAUD POLICY
+
+POLICY TYPE
+This is a demonstration policy for a local fraud-detection application.
+It is not an official bank policy or a regulatory standard.
+
+1. VERIFIED USERS
+
+The configured verified users are:
+
+- RAGHUL
+- VISWA
+- YAMUNA
+
+Verification in this demonstration is based only on membership in the
+application's configured list. It does not verify real-world identity.
+
+A verified sender may proceed under the configured demo rules when the
+receiver is also verified and the transaction does not meet a condition
+that requires review.
+
+2. UNKNOWN SENDERS
+
+A sender who is not present in the configured verified-user list is
+not authorized to proceed under the demo rules.
+
+The application should display:
+
+- Sender not verified.
+- Suspicious or unverified account activity.
+- The configured rule-based risk score.
+- The specific reasons for the decision.
+
+An unknown account is not automatically proven to be fraudulent.
+
+3. UNKNOWN RECEIVERS
+
+A payment to an unverified receiver should be held for review under
+this demonstration policy, even when the sender is verified.
+
+The application should identify the receiver verification issue and
+explain why additional verification is needed.
+
+4. DEMONSTRATION AMOUNT THRESHOLDS
+
+INR 10,000 to below INR 25,000:
+Add a review risk signal.
+
+INR 25,000 or more:
+Add a high-amount risk signal and require review.
+
+These amounts are configurable examples and are not official banking
+limits. Amount alone does not establish fraud.
+
+5. RISK SCORE
+
+The application's displayed risk score is calculated using explicit
+weighted rules for sender verification, receiver verification,
+transaction amount, and optional experimental model signals.
+
+The displayed value is capped at 100.
+
+This is a rule-based demonstration score. It is not a calibrated
+probability of fraud and should not be described as one.
+
+6. PAYMENT DECISIONS
+
+APPROVED BY DEMO RULES:
+The sender and receiver are configured as verified, and no high-amount
+review condition has been triggered.
+
+SUSPICIOUS ACTIVITY — REVIEW RECEIVER:
+The sender is verified but the receiver is not configured as verified.
+
+HIGH-VALUE PAYMENT — REVIEW REQUIRED:
+Both accounts are verified, but the transaction reaches the configured
+high-amount threshold.
+
+BLOCKED — SENDER NOT VERIFIED:
+The sender is not configured as verified.
+
+These are simulated application decisions. The application does not
+connect to a real payment network and does not move, block, or reverse money.
+
+7. MODEL LIMITATIONS
+
+The standard Kaggle credit card dataset contains anonymized numerical
+features, including V1-V28, Amount, Time, and Class.
+
+Class 0 means historically labelled legitimate.
+Class 1 means historically labelled fraud.
+
+The dataset does not supply the real account identities used in the
+FraudLens payment form.
+
+When required features are missing, filling them with training medians
+does not provide a reliable prediction for a real transaction.
+
+The model score must be described as experimental when these features
+are not supplied.
+
+8. RAG REQUIREMENTS
+
+Retrieve relevant policy passages for the transaction and question.
+
+Use the retrieved passages as policy evidence and the transaction
+fields as case evidence.
+
+The AI should explain the actual decision, triggered signals, risk
+score calculation, and next appropriate action.
+
+Cite only passages actually retrieved from this policy.
+
+If the policy does not support a claim, say so.
+
+Do not invent account history, identity verification, transaction
+history, device information, or completed checks.
+
+9. PRIVACY AND HUMAN REVIEW
+
+Never request a full card number, CVV, PIN, password, or OTP.
+
+Use authorized records to verify identities and investigate suspicious
+transactions.
+
+Escalate uncertain cases to an authorized reviewer.
+
+10. DISCLAIMER
+
+FraudLens is a demonstration system. Production payment approval requires
+secure identity verification, approved risk controls, access control,
+audit logging, model validation, and integration with an authorized
+payment system.
